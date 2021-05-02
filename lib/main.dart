@@ -68,8 +68,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<http.Response> fetchAlbum() {
     return http.get(
       Uri.parse(
-          'https:
-      
+           'https://api-football-v1.p.rapidapi.com/v2/fixtures/team/33/next/6'),
+      //headers can be passed directly as map
       headers: {
         HttpHeaders."x-rapidapi-host": "Basic your_api_token_here",
         HttpHeaders."x-rapidapi-key": "Basic your_api_token_here",
